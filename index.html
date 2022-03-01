@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+
+<style>
+    .hamburgerIconItem {
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        margin: 6px 0;
+        border-radius: 10%;
+    }
+
+    .myNav a:hover {
+        color: blue;
+    }
+
+    .mainDiv {
+        width: 100%;
+        height: 500px;
+        background-image: url(https://images.unsplash.com/photo-1460925895917-afdab827c52f?h=1500&w=2000&fit=clip&fm=jpg);
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    #section2 {
+        margin-top: 100px;
+    }
+</style>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg myNav">
+            <div class="container">
+                <button class="navbar-toggler justify-content-start  bg-primary " type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"
+                        style="display: flex; justify-content: center; align-items: center;">
+                        <div>
+                            <div class="hamburgerIconItem"></div>
+                            <div class="hamburgerIconItem"></div>
+                            <div class="hamburgerIconItem"></div>
+                        </div>
+                    </span>
+                </button>
+                <div style="display: flex;" class="justify-content-center">
+                    <a class="navbar-brand" href="#">
+                        <img src="https://assets.strikingly.com/assets/themes/fresh/power.png" alt="">
+                    </a>
+                    <h3 style="margin: auto 0; font-weight: 300; font-size: 18px;">Services</h3>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item ">
+                            <a href="#" class="nav-link  link-secondary">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link  link-secondary">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link link-secondary">Customers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link link-secondary">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link link-secondary">Sign up</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="mainDiv container-fluid d-flex justify-content-center align-items-center" style="flex-wrap: wrap;"
+            id="section1">
+            <div style="display: flex; flex-wrap: wrap;max-width: 800px; justify-content: center; align-items: center;">
+                <h1 style="color: white; font-size: 44px; text-align: center;font-weight: 700;letter-spacing: -1.9px;">
+                    DATA INSIGHTS ON DEMAND.</h1>
+                <p style="color: white;text-align: center; font-size: 25px;">Discover what your team can do with Datable
+                    Services.</p>
+                <button class="btn btn-primary btn-lg  " style="margin-top: 60px;">Speak with our team</button>
+            </div>
+        </div>
+        <div class="container" id="section2">
+            <h1 class="" style="text-align: center; color: #0E76BC; letter-spacing: -2.5px;">HELPING YOU LEARN MORE
+                ABOUT YOUR DATA</h1>
+            <p style="text-align: center;font-weight: 600; font-size: 19px;margin: 0;">Datable pulls your data source
+                and shares customized user insight you want.</p>
+            <p style="text-align: center; font-weight: 500;margin: 0;">Which users/members should you focus on? What
+                insights are hidden in valuable Data?</p>
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
+                <div style="width: 240px; display: flex; flex-wrap: wrap; justify-content: center;">
+                    <img style="width: 80%; margin: auto 0;"
+                        src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/187797/007_mhgb9e.png"
+                        alt="">
+                    <h2 class="text-primary" style="text-align: center;">Data Cleaning & Organizing</h2>
+                    <p style="text-align: center;">We can merge data from different sources, convert data to similar
+                        formats.</p>
+                </div>
+                <div style="width: 240px; display: flex; flex-wrap: wrap; justify-content: center;">
+                    <img style="width: 80%; margin: auto 0;"
+                        src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/187797/006_sgsu34.png"
+                        alt="">
+                    <h2 class="text-primary" style="text-align: center;">Data Analysis</h2>
+                    <p style="text-align: center;">"What can we do with this data?" We can help our customers learn more
+                        about their own data and what insights are missing or actionable.</p>
+                </div>
+                <div style="width: 240px; display: flex; flex-wrap: wrap; justify-content: center;">
+                    <img style="width: 80%; margin: auto 0;"
+                        src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/187797/001_eycwv0.png"
+                        alt="">
+                    <h2 class="text-primary" style="text-align: center;">Customer Discovery</h2>
+                    <p style="text-align: center;">We can identify new customer segments based on existing cohort of
+                        members, users or customers.</p>
+                </div>
+                <div style="width: 240px; display: flex; flex-wrap: wrap; justify-content: center;">
+                    <img style="width: 80%; margin: auto 0;"
+                        src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/187797/002_fhlzvo.png"
+                        alt="">
+                    <h2 class="text-primary" style="text-align: center;">Customer Retention</h2>
+                    <p style="text-align: center;">Tracking customer behavior we can identify what activity and
+                        demographics lead to retention challenges.</p>
+                </div>
+                <div style="width: 240px; display: flex; flex-wrap: wrap; justify-content: center;">
+                    <img style="width: 80%; margin: auto 0;"
+                        src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/187797/003_o0fxej.png"
+                        alt="">
+                    <h2 class="text-primary" style="text-align: center;">Customer Retention</h2>
+                    <p style="text-align: center;">We can help you segment users based on limited demographic
+                        information.</p>
+                </div>
+                <div style="width: 240px; display: flex; flex-wrap: wrap; justify-content: center;">
+                    <img style="width: 80%; margin: auto 0;"
+                        src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/187797/004_opytyz.png"
+                        alt="">
+                    <h2 class="text-primary" style="text-align: center;">Sentiment Analysis</h2>
+                    <p style="text-align: center;">We can analyze customer text in order to determine if the attitude is
+                        positive, negative or neutral.</p>
+                </div>
+                <div style="width: 240px; display: flex; flex-wrap: wrap; justify-content: center;">
+                    <img style="width: 80%; margin: auto 0;"
+                        src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/187797/005_pc2vt8.png"
+                        alt="">
+                    <h2 class="text-primary" style="text-align: center;">Matching Members</h2>
+                    <p style="text-align: center;">We can create a matching algorithm for platforms looking to match
+                        members.</p>
+                </div>
+                <div style="width: 240px; display: flex; flex-wrap: wrap; justify-content: center;">
+                    <img style="width: 80%; margin: auto 0;"
+                        src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/187797/009_fszpjt.png"
+                        alt="">
+                    <h2 class="text-primary" style="text-align: center;">Data exploration</h2>
+                    <p style="text-align: center;">We can help organizations that are looking to get smarter about their
+                        data and identify a process for exploration.</p>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+        <div class="container">
+            <div>
+                <h2 style="text-align: center; color:#0E76BC ;">Our Customers</h2>
+                <h5 style="text-align: center;">Click on their pictures to learn more about our work</h5>
+            </div>
+            <div style="display: flex; justify-content: space-between;flex-wrap: wrap;">
+                <img src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/187797/Screen_Shot_2017-07-13_at_7.03.18_PM_rcwdl9.png"
+                    alt="">
+                <img src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/187797/0eed5195-33e5-4557-8a53-7c5996387c12_ffzwmo.jpg"
+                    alt="">
+                <img src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/187797/wonderschools_ye93ma.jpg"
+                    alt="">
+                <img src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/187797/80db8cc7-6a4c-4457-bd46-4e8d146122cb_qt1tdl.jpg"
+                    alt="">
+                <img src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/187797/Screen_Shot_2018-02-12_at_2.56.26_PM_aitblo.png"
+                    alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script> -->
+
+</body>
+
+</html>
