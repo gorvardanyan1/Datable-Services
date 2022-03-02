@@ -26,6 +26,27 @@
     #section2 {
         margin-top: 100px;
     }
+
+    .personH2 {
+        min-width: 161px;
+    }
+
+    .personH6 {
+        min-width: 60px;
+    }
+
+    .inputReg {
+        height: 45px;
+        margin-left: 5px;
+        margin-top: 5px;
+        border: 5px solid white;
+        border-radius: 6%;
+    }
+
+    .inputInp:focus {
+        border: 5px solid #00FFEE;
+        outline: none;
+    }
 </style>
 
 <head>
@@ -40,15 +61,15 @@
     <title>Hello, world!</title>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
     <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg myNav">
+        <nav class="navbar navbar-expand-lg bg-white fixed-top myNav">
             <div class="container">
-                <button class="navbar-toggler justify-content-start  bg-primary " type="button"
+                <button class="navbar-toggler justify-content-start  bg-primary navBtt shadow-none" type="button"
                     data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"
-                        style="display: flex; justify-content: center; align-items: center;">
+                        style="display: flex; justify-content: center; align-items: center; ">
                         <div>
                             <div class="hamburgerIconItem"></div>
                             <div class="hamburgerIconItem"></div>
@@ -65,26 +86,25 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav ">
                         <li class="nav-item ">
-                            <a href="#" class="nav-link  link-secondary">Home</a>
+                            <a href="#section1" class="nav-link  link-secondary">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link  link-secondary">Services</a>
+                            <a href="#section2" class="nav-link  link-secondary">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link link-secondary">Customers</a>
+                            <a href="#section3" class="nav-link link-secondary">Customers</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link link-secondary">Team</a>
+                            <a href="#section4" class="nav-link link-secondary">Team</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link link-secondary">Sign up</a>
+                            <a href="#section5" class="nav-link link-secondary">Sign up</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="mainDiv container-fluid d-flex justify-content-center align-items-center" style="flex-wrap: wrap;"
-            id="section1">
+        <div class="mainDiv  d-flex justify-content-center align-items-center" style="flex-wrap: wrap; margin-top: 50px;" id="section1">
             <div style="display: flex; flex-wrap: wrap;max-width: 800px; justify-content: center; align-items: center;">
                 <h1 style="color: white; font-size: 44px; text-align: center;font-weight: 700;letter-spacing: -1.9px;">
                     DATA INSIGHTS ON DEMAND.</h1>
@@ -93,14 +113,14 @@
                 <button class="btn btn-primary btn-lg  " style="margin-top: 60px;">Speak with our team</button>
             </div>
         </div>
-        <div class="container" id="section2">
+        <div class="container" id="section2" style=" margin-top: 100px;">
             <h1 class="" style="text-align: center; color: #0E76BC; letter-spacing: -2.5px;">HELPING YOU LEARN MORE
                 ABOUT YOUR DATA</h1>
             <p style="text-align: center;font-weight: 600; font-size: 19px;margin: 0;">Datable pulls your data source
                 and shares customized user insight you want.</p>
             <p style="text-align: center; font-weight: 500;margin: 0;">Which users/members should you focus on? What
                 insights are hidden in valuable Data?</p>
-            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
+            <div class="row justify-content-center">
                 <div style="width: 240px; display: flex; flex-wrap: wrap; justify-content: center;">
                     <img style="width: 80%; margin: auto 0;"
                         src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/187797/007_mhgb9e.png"
@@ -169,23 +189,134 @@
 
         </div>
         <hr>
-        <div class="container">
+        <div class="container" id="section3" style=" margin-top: 100px;">
             <div>
                 <h2 style="text-align: center; color:#0E76BC ;">Our Customers</h2>
                 <h5 style="text-align: center;">Click on their pictures to learn more about our work</h5>
             </div>
-            <div style="display: flex; justify-content: space-between;flex-wrap: wrap;">
-                <img src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/187797/Screen_Shot_2017-07-13_at_7.03.18_PM_rcwdl9.png"
+            <div class="row justify-content-center">
+                <img class="col" style="max-width: 240px; max-height: 240px;"
+                    src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/187797/Screen_Shot_2017-07-13_at_7.03.18_PM_rcwdl9.png"
                     alt="">
-                <img src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/187797/0eed5195-33e5-4557-8a53-7c5996387c12_ffzwmo.jpg"
+                <img class="col" style="max-width: 240px; max-height: 240px;"
+                    src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/187797/0eed5195-33e5-4557-8a53-7c5996387c12_ffzwmo.jpg"
                     alt="">
-                <img src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/187797/wonderschools_ye93ma.jpg"
+                <img class="col" style="max-width: 240px; max-height: 240px;"
+                    src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/187797/wonderschools_ye93ma.jpg"
                     alt="">
-                <img src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/187797/80db8cc7-6a4c-4457-bd46-4e8d146122cb_qt1tdl.jpg"
+                <img class="col" style="max-width: 240px; max-height: 240px;"
+                    src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/187797/80db8cc7-6a4c-4457-bd46-4e8d146122cb_qt1tdl.jpg"
                     alt="">
-                <img src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/187797/Screen_Shot_2018-02-12_at_2.56.26_PM_aitblo.png"
+                <img class="col" style="max-width: 240px; max-height: 240px;"
+                    src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/187797/Screen_Shot_2018-02-12_at_2.56.26_PM_aitblo.png"
                     alt="">
             </div>
+        </div>
+        <hr>
+        <div class="container " id="section4" style=" margin-top: 100px;">
+            <div>
+                <h2 style="text-align: center; color:#0E76BC ;">MEET THE TEAM</h2>
+                <h5 style="text-align: center;">A top notch team to help you!</h5>
+            </div>
+            <div class="row justify-content-center">
+                <div style="width: 240px; display: flex; flex-wrap: wrap; justify-content: center;">
+                    <img style="width: 80%; margin: auto 0;"
+                        src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/187797/lull_kksemt.png"
+                        alt="">
+                    <h2 class="text-primary personH2" style="text-align: center;">Lull Mengesha</h2>
+                    <h6 style="text-align: center;" class="personH6">CEO</h6>
+                </div>
+                <div style="width: 240px; display: flex; flex-wrap: wrap; justify-content: center;">
+                    <img style="width: 80%; margin: auto 0;"
+                        src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/187797/matt_bzfxcz.png"
+                        alt="">
+                    <h2 class="text-primary" style="text-align: center;">Matt Lichti</h2>
+                    <h6 style="text-align: center;">Data Scientist</h6>
+                </div>
+                <div style="width: 240px; display: flex; flex-wrap: wrap; justify-content: center;">
+                    <img style="width: 80%; margin: auto 0;"
+                        src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/187797/daniel_wmhxwa.png"
+                        alt="">
+                    <h2 class="text-primary" style="text-align: center;">Daniel Gibson</h2>
+                    <h6 style="text-align: center;">Data Scientist</h6>
+                </div>
+                <div style="width: 240px; display: flex; flex-wrap: wrap; justify-content: center;">
+                    <img style="width: 80%; margin: auto 0;"
+                        src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/187797/69952c07-6f68-4d3c-8f99-ef5fd0c04da3_pgvp0z.png"
+                        alt="">
+                    <h2 class="text-primary" style="text-align: center;">Jared Thompson</h2>
+                    <h6 style="text-align: center;">Advisor</h6>
+                </div>
+                <div style="width: 240px; display: flex; flex-wrap: wrap; justify-content: center;  ">
+                    <img style="width: 80%; margin: auto 0;;"
+                        src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/187797/31194995-c0eb-445e-b5bf-caa67910a900_ckhovc.png"
+                        alt="">
+                    <h2 class="text-primary personH2" style="text-align: center;">Mike Tamir</h2>
+                    <h6 style="text-align: center;">Advisor</h6>
+                </div>
+            </div>
+        </div>
+        <div class=" row" style="background-color: #202857; min-height: 500px;  margin-top: 100px;" id="section5">
+            <div class="left col-sm-6"
+                style="display: flex; flex-wrap: wrap; align-items: center;justify-content: center;">
+                <div>
+                    <h4 style="color: white; text-align: center;">Become smarter with your Data.</h4>
+                    <h4 style="color: white; text-align: center;">Datable helps companies gain insights around their
+                        data
+                        needs. From user discovery to deeper insights speak with our team:</h4>
+                    <form class="row">
+                        <input class="inputReg inputInp col-sm-4" type="text" placeholder="Name">
+                        <input class="inputReg  inputInp col-sm-4" type="text" placeholder="Email">
+                        <input type="submit" class="inputReg col-sm-4" value="Submit"
+                            style="background-color: #283891; border: 5px solid #283891;">
+                    </form>
+                </div>
+            </div>
+            <div class="right col-sm-6"
+                style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center;">
+                <img style="width: 80%; max-width: 484px;"
+                    src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_60/187797/470_ibay1p.gif"
+                    alt="">
+            </div>
+        </div>
+        <div class="container-fluid row" style="width: 100%;">
+
+            <ul class="navbar-nav col-sm-4 ">
+                <li>
+                    <H6>Navigation</H6>
+                </li>
+                <li class="nav-item ">
+                    <a href="#section1" class="nav-link  link-primary" style="font-size: 14px;">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#section2" class="nav-link  link-primary" style="font-size: 14px;">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#section3" class="nav-link link-primary" style="font-size: 14px;">Customers</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#section4" class="nav-link link-primary" style="font-size: 14px;">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#section5" class="nav-link link-primary" style="font-size: 14px;">Sign up</a>
+                </li>
+            </ul>
+            <ul style="list-style-type:none;" class="col-sm-4">
+                <li>
+                    <h6>About Datable</h6>
+                </li>
+                <li style="font-size: 14px;">We deliver insights on demand to help <br> you learn more about
+                    customers
+                    and users.</li>
+            </ul>
+            <ul class="col-sm-4" style="list-style-type: none;">
+                <li>
+                    <h6>Contact Us</h6>
+                </li>
+                <li><a href="#" class="link link-primary">Email</a> </li>
+                <li>206-240-9988</li>
+            </ul>
+
         </div>
     </div>
 
